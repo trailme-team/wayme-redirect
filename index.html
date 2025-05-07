@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        // Get the current URL's query parameters and sub-path
+        const currentPath = window.location.pathname;
+        const currentSearch = window.location.search;
+
+        // Construct the new URL
+        const targetUrl = `https://wayme.io${currentPath}${currentSearch}`;
+
+        // Redirect to the new URL
+        window.location.replace(targetUrl);
+    </script>
+</head>
+<body>
+    <p>Redirecting to <a href="https://wayme.io">https://wayme.io</a>...</p>
+</body>
+</html>
